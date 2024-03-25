@@ -4,14 +4,17 @@ on: [push]
 jobs:
   Semantic-Release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
+      - uses: actions/setup-node@v4
         with:
-          branch: release
-          # tag_format: ${version}
-          # extra_plugins: |
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 20
+      - name: Release
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: npx semantic-release@23
