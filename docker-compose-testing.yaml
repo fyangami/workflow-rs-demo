@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  test-srv:
+    image: rust
+    volumes:
+      - "./:/usr/src/app"
+    working_dir: "/usr/src/app"
+    command: env RUST_BACKTRACE=1 cargo test --tests -j 1 -- --nocapture --test-threads=1 
