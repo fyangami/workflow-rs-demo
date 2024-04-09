@@ -8,7 +8,6 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-      packages: write
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -20,6 +19,10 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: npx semantic-release@23
   Build-Image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
