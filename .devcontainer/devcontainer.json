@@ -1,6 +1,8 @@
 {
     "name": "workflow-rs-demo Dev Container",
-    "forwardPorts": [],
+    "forwardPorts": [
+        80
+    ],
     "image": "mcr.microsoft.com/devcontainers/rust:1",
     "customizations": {
         "vscode": {
