@@ -19,7 +19,8 @@
 
 注：
 - **Rust** 代码无需了解。旨在演示现代 `Devops` 实践过程。 
-- 本项目的 CI 流程尚不够健壮，但我想应该是一个不错的学习和理解 **Devops** 以及 **容器化** 核心理念的起点😉
+- 由于本项目的所有 **Rust** 代码仅意图演示使用，为了保证代码的简洁，多处使用了`unwrap`，实际项目请完善异常处理。
+- 本项目的 **CI\CD** 流程尚不够健壮，但我想应该是一个不错的学习和理解 **Devops** 以及 **容器化** 核心理念的起点😉
 
 # 实验环境依赖
 - **Vs Code** 编辑器且安装有 [Remote Development](https://github.com/Microsoft/vscode-remote-release) 插件
