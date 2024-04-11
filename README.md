@@ -18,7 +18,7 @@
 - 基于 [axum](https://github.com/tokio-rs/axum) 的 **HTTP** 服务，以及一个演示接口：`curl http://{container_name}/{path_variable}`。
 
 注：
-- **Rust** 代码仅做演示，无需了解。旨在演示现代 `Devops` 实践。 
+- **Rust** 代码无需了解。旨在演示现代 `Devops` 实践过程。 
 - 本项目的 CI 流程尚不够健壮，但我想应该是一个不错的学习和理解 **Devops** 以及 **容器化** 核心理念的起点😉
 
 # 实验环境依赖
